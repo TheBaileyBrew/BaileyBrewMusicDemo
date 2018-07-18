@@ -2,18 +2,18 @@ package com.thebaileybrew.baileybrewmusicdemo;
 
 public class song {
 
+    private final int idValue;
     private final String artistName;
     private final String artistSong;
     private final int artistBackground;
     private final int artistResource;
-    private final int artistSongLength;
 
-    public song(String artistName, String artistSong, int artistBackground, int artistResource, int artistSongLength) {
+    public song(String artistName, String artistSong, int artistBackground, int artistResource, int idValue) {
         this.artistName = artistName;
         this.artistSong = artistSong;
         this.artistBackground = artistBackground;
         this.artistResource = artistResource;
-        this.artistSongLength = artistSongLength;
+        this.idValue = idValue;
     }
 
     public String getArtistName() {
@@ -32,7 +32,7 @@ public class song {
         return artistResource;
     }
 
-    public int getArtistSongLength() {
-        return artistSongLength;
+    public int getIdValue() {
+        return idValue;
     }
 }
